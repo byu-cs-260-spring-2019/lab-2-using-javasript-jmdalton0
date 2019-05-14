@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>Lab 2</title>
-    <link rel="stylesheet" href="./styles.css">
-  </head>
-  <body>
-    
-    <h1>Lab 2</h1>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
-    <script text="type/javascript" src="./script.js">
-    </script>
+<head>
+  <meta charset="utf-8" />
+  <title>Lab 2</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
 
-  </body>
+<body>
+
+  <h1>Open Weather Map</h1>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"
+    integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+  <script text="type/javascript" src="./script.js">
+  </script>
+
+  <div class="border">
+    <form>
+      <label>US CITY</label><br>
+      <input id="weatherInput" type="text" value="Provo"></input><br />
+      <input id="weatherSubmit" type="submit" value="OK"></input>
+    </form>
+  </div>
+
+  <div class="border">
+    <h2 id="weatherHeading">Current Weather</h2>
+    <div  id="weatherResults"></div>
+  </div>
+
+  <div class="border">
+    <h2>5 Day 3 Hour Forecast</h2>
+    <div id="3hourResults"></div>
+  </div>
+
+</body>
+
 </html>
